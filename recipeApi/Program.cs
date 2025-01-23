@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+
 namespace recipeApi
 {
     public class Program
@@ -8,6 +10,8 @@ namespace recipeApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<RecipeSaverContext>(option =>
+            option.UseSqlServer(builder.Configuration.GetConnectionString("RecipeSaver")));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
