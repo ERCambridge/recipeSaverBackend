@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("recipeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0bf39176571e11d84ace7513e1ec1a810584936")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+593d323a8d597ae5d7a80c2039ddfa57fa92b47b")]
 [assembly: System.Reflection.AssemblyProductAttribute("recipeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("recipeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

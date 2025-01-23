@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\controllers\\recipesaverapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|solutionrelative:controllers\\recipesaverapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|solutionrelative:models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69FBE9D3-B346-47BB-A75D-B6A94976530C}|recipeApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,7 +34,50 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{80c411e8-fd5e-4b16-914b-0d9d84172cc1}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "Models\\Recipe.cs",
+              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\Recipe.cs",
+              "RelativeToolTip": "Models\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T02:39:04.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T02:21:49.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecipeSaverApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Controllers\\RecipeSaverApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecipeSaverApiController.cs",
+              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Controllers\\RecipeSaverApiController.cs",
+              "RelativeToolTip": "Controllers\\RecipeSaverApiController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T02:04:28.67Z",
+              "EditorCaption": ""
             }
           ]
         }
