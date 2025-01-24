@@ -80,17 +80,19 @@ namespace recipeApi.Controllers
 
         //Get Recipes by UserID
         [HttpGet("recipes/{id}")]
-        public async Task<List<Recipe>> getRecipeByUserId(int id)
+        public async Task<List<Recipe>> getRecipeByUserId(int id, bool? isOnList = null)
         {
-            var recipes = await _context.Recipes
+            var recipes = _context.Recipes
                 //.Where(r => r.UserId == id && r.IsOnList == false)
-                .Where(r => r.UserId == id)
-                .ToListAsync();
+                .Where(r => r.UserId == id);
+                //.ToListAsync();
+                if (isOnList != null)
+                {
+                recipes = recipes.Where(r => r.IsOnList == isOnList.Value);
+                }
 
-            return recipes;
+            return await recipes.ToListAsync();
         }
-
-        //Get Recipes by UserID  - Not Included in Shopping list
 
         //Get Recipe by Recipe ID
         [HttpGet("recipe/{id}")]
@@ -101,6 +103,55 @@ namespace recipeApi.Controllers
                 .ToListAsync();
 
             return recipe;
+        }
+
+        //Create new recipe
+        [HttpPost("recipe")]
+        public async Task<Recipe> addRecipe([Bind("RecipeID, RecipeName, RecipeCategory, IngredientList, IsOnList, UserID, User")] Recipe newRecipe)
+        {
+            _context.Add(newRecipe);
+            await _context.SaveChangesAsync();
+            return newRecipe;
+        }
+        //Edit Existing Recipe
+        [HttpPut("recipe")]
+        public async Task<ActionResult<int>> updateRecipe([Bind("RecipeID, RecipeName, RecipeCategory, IngredientList, IsOnList, UserID")] Recipe updatedRecipe)
+        {
+            try
+            {
+                _context.Update(updatedRecipe);
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {
+                if (RecipeExists(updatedRecipe.RecipeId))
+                {
+                    throw;
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            return Ok();
+        }
+
+        //Check if Recipe Exists
+        private bool RecipeExists(int id)
+        {
+            return (_context.Recipes?.Any(e => e.UserId == id)).GetValueOrDefault();
+        }
+        //Delete Existing Recipe
+        [HttpDelete("recipe/{id}")]
+        public async Task<ActionResult<int>> deleteRecipe(int id)
+        {
+            var recipe = await _context.Recipes.FindAsync(id);
+            if (recipe != null)
+            {
+                _context.Recipes.Remove(recipe);
+                _context.SaveChanges();
+            }
+            return Ok();
         }
     }
 }

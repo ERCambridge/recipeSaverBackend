@@ -1,6 +1,58 @@
 [
   {
     "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "addRecipe",
+    "RelativePath": "api/RecipeSaverApi/recipe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newRecipe",
+        "Type": "recipeApi.Models.Recipe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "recipeApi.Models.Recipe",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "updateRecipe",
+    "RelativePath": "api/RecipeSaverApi/recipe",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedRecipe",
+        "Type": "recipeApi.Models.Recipe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
     "Method": "getRecipeByRecipeId",
     "RelativePath": "api/RecipeSaverApi/recipe/{id}",
     "HttpMethod": "GET",
@@ -16,6 +68,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[recipeApi.Models.Recipe, recipeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "deleteRecipe",
+    "RelativePath": "api/RecipeSaverApi/recipe/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -57,6 +135,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "isOnList",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
