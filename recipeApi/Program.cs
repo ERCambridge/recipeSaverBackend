@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 
+
+
 namespace recipeApi
 {
     public class Program
@@ -8,6 +10,16 @@ namespace recipeApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                            .AllowAnyMethod().AllowAnyHeader();
+                    });
+            });
 
             // Add services to the container.
             builder.Services.AddDbContext<RecipeSaverContext>(option =>
@@ -33,6 +45,8 @@ namespace recipeApi
 
 
             app.MapControllers();
+
+            app.UseCors();
 
             app.Run();
         }
