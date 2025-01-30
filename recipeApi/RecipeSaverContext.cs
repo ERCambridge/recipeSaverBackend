@@ -16,6 +16,8 @@ public partial class RecipeSaverContext : DbContext
     {
     }
 
+    public virtual DbSet<Ingredient> Ingredients { get; set; }
+
     public virtual DbSet<Recipe> Recipes { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
@@ -26,9 +28,27 @@ public partial class RecipeSaverContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Ingredient>(entity =>
+        {
+            entity.HasKey(e => e.IngredientId).HasName("PK__Ingredie__BEAEB27ACA04D1FF");
+
+            entity.Property(e => e.IngredientId).HasColumnName("IngredientID");
+            entity.Property(e => e.IngredientName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.IngredientQuantity)
+                .HasMaxLength(25)
+                .IsUnicode(false);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Ingredients)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__Ingredien__UserI__4E88ABD4");
+        });
+
         modelBuilder.Entity<Recipe>(entity =>
         {
-            entity.HasKey(e => e.RecipeId).HasName("PK__Recipes__FDD988D0DF450F91");
+            entity.HasKey(e => e.RecipeId).HasName("PK__Recipes__FDD988D07156BA01");
 
             entity.Property(e => e.RecipeId).HasColumnName("RecipeID");
             entity.Property(e => e.IngredientList).IsUnicode(false);
@@ -43,12 +63,12 @@ public partial class RecipeSaverContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Recipes)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Recipes__UserID__3A81B327");
+                .HasConstraintName("FK__Recipes__UserID__4BAC3F29");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC86B09160");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCACD413CA4A");
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.UserEmail)

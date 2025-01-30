@@ -12,17 +12,24 @@ namespace recipeApi.Controllers
 
         private readonly RecipeSaverContext _context;
 
+        //constructor for db context
         public RecipeSaverApiController(RecipeSaverContext context)
         {
             _context = context;
         }
 
+        /****************
+         * CRUD for Users
+         ****************/
+
+        //get all users
         [HttpGet("users")]
         public async Task<List<User>> getUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
+        //add new user
         [HttpPost("users")]
         public async Task<User> addUser([Bind("UserID, UserName, UserEmail, UserPassword")] User newUser)
         {
@@ -31,6 +38,7 @@ namespace recipeApi.Controllers
             return newUser;
         }
 
+        //delete existing user by id
         [HttpDelete("users/{id}")]
         public async Task<ActionResult<int>> deleteUser(int id)
         {
@@ -44,6 +52,7 @@ namespace recipeApi.Controllers
             return Ok();
         }
 
+        //Update existing user
         [HttpPut("users")]
         public async Task<ActionResult<int>> updateUser([Bind("UserID, UserName, UserEmail, UserPassword")] User updatedUser)
         {
@@ -61,15 +70,20 @@ namespace recipeApi.Controllers
                 else
                 {
                     return NotFound();
-                }                
+                }
             }
             return Ok();
         }
 
+        //check if user exists
         private bool UserExists(int id)
         {
             return (_context.Users?.Any(e => e.UserId == id)).GetValueOrDefault();
         }
+
+        /******************
+         * CRUD for Recipes
+         ******************/
 
         //get all recipes - WE May NOT NEED
         [HttpGet("recipes")]
@@ -85,11 +99,11 @@ namespace recipeApi.Controllers
             var recipes = _context.Recipes
                 //.Where(r => r.UserId == id && r.IsOnList == false)
                 .Where(r => r.UserId == id);
-                //.ToListAsync();
-                if (isOnList != null)
-                {
+            //.ToListAsync();
+            if (isOnList != null)
+            {
                 recipes = recipes.Where(r => r.IsOnList == isOnList.Value);
-                }
+            }
 
             return await recipes.ToListAsync();
         }
@@ -153,5 +167,81 @@ namespace recipeApi.Controllers
             }
             return Ok();
         }
+
+        /**********************
+         * CRUD for Ingredients
+         **********************/
+
+        //Get Ingredients by UserID
+        [HttpGet("ingredients/{id}")]
+        public async Task<List<Ingredient>> getIngredientByUserId(int id)
+        {
+            var ingredients = _context.Ingredients
+
+                .Where(i => i.UserId == id);
+
+            return await ingredients.ToListAsync();
+        }
+
+        //Create new ingredient
+        [HttpPost("ingredient")]
+        public async Task<Ingredient> addIngredient([Bind("IngredientID, IngredientName, IngredientQuantity, UserID, User")] Ingredient newIngredient)
+        {
+            _context.Add(newIngredient);
+            await _context.SaveChangesAsync();
+            return newIngredient;
+        }
+
+        //Delete Existing Ingredient
+        [HttpDelete("ingredient/{id}")]
+        public async Task<ActionResult<int>> deleteIngredient(int id)
+        {
+            var ingredient = await _context.Ingredients.FindAsync(id);
+            if (ingredient != null)
+            {
+                _context.Ingredients.Remove(ingredient);
+                _context.SaveChanges();
+            }
+            return Ok();
+        }
+
+        //Potentially not needed/admin only 
+
+        //Get all ingredients
+        [HttpGet("ingredients")]
+        public async Task<List<Ingredient>> getIngredients()
+        {
+            return await _context.Ingredients.ToListAsync();
+        }
+
+        //Edit Existing Ingredient
+        [HttpPut("ingredient")]
+        public async Task<ActionResult<int>> updateIngredient([Bind("IngredientID, IngredientName, IngredientQuantity, UserID, User")] Ingredient updatedIngredient)
+        {
+            try
+            {
+                _context.Update(updatedIngredient);
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {
+                if (IngredientExists(updatedIngredient.IngredientId))
+                {
+                    throw;
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            return Ok();
+        }
+
+        //Check if Ingredient Exists
+        private bool IngredientExists(int id)
+        {
+            return (_context.Ingredients?.Any(e => e.IngredientId == id)).GetValueOrDefault();
+        }
+
     }
 }

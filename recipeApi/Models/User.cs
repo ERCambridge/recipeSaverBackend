@@ -13,5 +13,7 @@ public partial class User
 
     public string UserPassword { get; set; } = null!;
 
+    public virtual ICollection<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+
     public virtual ICollection<Recipe> Recipes { get; set; } = new List<Recipe>();
 }

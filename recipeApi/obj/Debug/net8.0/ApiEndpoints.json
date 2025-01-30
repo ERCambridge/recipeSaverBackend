@@ -1,6 +1,130 @@
 [
   {
     "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "addIngredient",
+    "RelativePath": "api/RecipeSaverApi/ingredient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newIngredient",
+        "Type": "recipeApi.Models.Ingredient",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "recipeApi.Models.Ingredient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "updateIngredient",
+    "RelativePath": "api/RecipeSaverApi/ingredient",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedIngredient",
+        "Type": "recipeApi.Models.Ingredient",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "deleteIngredient",
+    "RelativePath": "api/RecipeSaverApi/ingredient/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "getIngredients",
+    "RelativePath": "api/RecipeSaverApi/ingredients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[recipeApi.Models.Ingredient, recipeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "getIngredientByUserId",
+    "RelativePath": "api/RecipeSaverApi/ingredients/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[recipeApi.Models.Ingredient, recipeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
     "Method": "addRecipe",
     "RelativePath": "api/RecipeSaverApi/recipe",
     "HttpMethod": "POST",
