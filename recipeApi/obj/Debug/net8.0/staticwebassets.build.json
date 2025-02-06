@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "VqQ16vbafxgr/Dz5EpDZGaq8J3eI6gpKREkaBFCrl4k=",
+  "Hash": "kqls4dU1XpiewWO2tjgVHfC//uFd2/oAU+bNJPZJeWg=",
   "Source": "recipeApi",
   "BasePath": "_content/recipeApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

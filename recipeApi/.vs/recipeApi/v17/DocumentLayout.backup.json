@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|solutionrelative:recipesavercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,11 +46,28 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-06T07:46:03.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -65,14 +86,14 @@
               "RelativeDocumentMoniker": "RecipeSaverContext.cs",
               "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\RecipeSaverContext.cs",
               "RelativeToolTip": "RecipeSaverContext.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wCgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T23:38:46.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\Ingredient.cs",
               "RelativeDocumentMoniker": "Models\\Ingredient.cs",
@@ -80,12 +101,11 @@
               "RelativeToolTip": "Models\\Ingredient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T23:38:29.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T23:38:29.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -93,8 +113,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T01:16:29.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T01:16:29.752Z"
             },
             {
               "$type": "Document",
@@ -104,10 +123,14 @@
               "RelativeDocumentMoniker": "Controllers\\RecipeSaverApiController.cs",
               "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Controllers\\RecipeSaverApiController.cs",
               "RelativeToolTip": "Controllers\\RecipeSaverApiController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwPAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T23:29:44.863Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
