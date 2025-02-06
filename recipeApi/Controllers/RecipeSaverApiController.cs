@@ -29,6 +29,17 @@ namespace recipeApi.Controllers
             return await _context.Users.ToListAsync();
         }
 
+        //get user by email
+        [HttpGet("users/{email}")]
+        public async Task<List<User>> getUserByEmail(string email)
+        {
+            var user = await _context.Users
+                .Where(u => u.UserEmail == email)
+                .ToListAsync();
+
+            return user;
+        }
+
         //add new user
         [HttpPost("users")]
         public async Task<User> addUser([Bind("UserID, UserName, UserEmail, UserPassword")] User newUser)
@@ -97,9 +108,7 @@ namespace recipeApi.Controllers
         public async Task<List<Recipe>> getRecipeByUserId(int id, bool? isOnList = null)
         {
             var recipes = _context.Recipes
-                //.Where(r => r.UserId == id && r.IsOnList == false)
                 .Where(r => r.UserId == id);
-            //.ToListAsync();
             if (isOnList != null)
             {
                 recipes = recipes.Where(r => r.IsOnList == isOnList.Value);
