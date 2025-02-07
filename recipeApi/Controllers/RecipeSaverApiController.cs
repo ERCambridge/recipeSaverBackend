@@ -30,15 +30,14 @@ namespace recipeApi.Controllers
         }
 
         //get user by email
-        [HttpGet("users/{email}")]
-        public async Task<List<User>> getUserByEmail(string email)
+        [HttpGet("user")]
+        public async Task<User> GetUserByEmail(string email)
         {
             var user = await _context.Users
-                .Where(u => u.UserEmail == email)
-                .ToListAsync();
-
+                .FirstOrDefaultAsync(u => u.UserEmail == email);
             return user;
         }
+
 
         //add new user
         [HttpPost("users")]
