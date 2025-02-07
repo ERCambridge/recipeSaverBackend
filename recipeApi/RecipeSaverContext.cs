@@ -79,7 +79,7 @@ public partial class RecipeSaverContext : DbContext
                 .HasMaxLength(25)
                 .IsUnicode(false);
             entity.Property(e => e.UserPassword)
-                .HasMaxLength(30)
+                .HasMaxLength(128)
                 .IsUnicode(false);
         });
 

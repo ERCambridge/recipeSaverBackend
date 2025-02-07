@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\recipesavercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|solutionrelative:recipesavercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|c:\\users\\ethan\\workspace\\lab_repos\\recipesaverbackend\\recipeapi\\controllers\\recipesaverapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DECA8F3-5394-44E7-AF48-656E1BB9A379}|recipeApi.csproj|solutionrelative:controllers\\recipesaverapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,12 +49,21 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecipeSaverContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\RecipeSaverContext.cs",
+              "RelativeDocumentMoniker": "RecipeSaverContext.cs",
+              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\RecipeSaverContext.cs",
+              "RelativeToolTip": "RecipeSaverContext.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwFAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T00:41:55.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -63,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -76,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Models\\Ingredient.cs",
               "RelativeDocumentMoniker": "Models\\Ingredient.cs",
@@ -88,16 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RecipeSaverApiController.cs",
               "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Controllers\\RecipeSaverApiController.cs",
               "RelativeDocumentMoniker": "Controllers\\RecipeSaverApiController.cs",
               "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\recipeSaverBackend\\recipeApi\\Controllers\\RecipeSaverApiController.cs",
               "RelativeToolTip": "Controllers\\RecipeSaverApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T23:29:44.863Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
