@@ -5170,19 +5170,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Evan\\.nuget\\packages\\": {}
+    "C:\\Users\\Kendall\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Evan\\Desktop\\Grand-Circus\\recipeSaverBackend\\recipeApi\\recipeApi.csproj",
+      "projectUniqueName": "C:\\Users\\Kendall\\bootcamp_c_sharp\\recipeSaverBackend\\recipeApi\\recipeApi.csproj",
       "projectName": "recipeApi",
-      "projectPath": "C:\\Users\\Evan\\Desktop\\Grand-Circus\\recipeSaverBackend\\recipeApi\\recipeApi.csproj",
-      "packagesPath": "C:\\Users\\Evan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Evan\\Desktop\\Grand-Circus\\recipeSaverBackend\\recipeApi\\obj\\",
+      "projectPath": "C:\\Users\\Kendall\\bootcamp_c_sharp\\recipeSaverBackend\\recipeApi\\recipeApi.csproj",
+      "packagesPath": "C:\\Users\\Kendall\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kendall\\bootcamp_c_sharp\\recipeSaverBackend\\recipeApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Evan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kendall\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5252,7 +5252,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
