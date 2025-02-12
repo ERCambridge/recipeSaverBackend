@@ -280,6 +280,32 @@
   },
   {
     "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "api/RecipeSaverApi/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "recipeApi.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
     "Method": "getUsers",
     "RelativePath": "api/RecipeSaverApi/users",
     "HttpMethod": "GET",
@@ -341,32 +367,6 @@
     "ReturnTypes": [
       {
         "Type": "System.Int32",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "recipeApi.Controllers.RecipeSaverApiController",
-    "Method": "getUserByEmail",
-    "RelativePath": "api/RecipeSaverApi/users/{email}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[recipeApi.Models.User, recipeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
